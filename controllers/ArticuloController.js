@@ -42,7 +42,7 @@ exports.add = async(req, res, next) =>{
 
 exports.update = async(req, res, next) =>{
     try{
-        const register = await models.Articulo.update({nombre: req.body.nombre, descripcion: req.body.descripcion, codigo: req.body.codigo, categoriaId: req.body.categoriaId, precio_venta: req.body.precio_venta, stock: req.body.stock},
+        const register = await models.Articulo.update({nombre: req.body.nombre, descripcion: req.body.descripcion, codigo: req.body.codigo, categoriaId: req.body.categoriaId, precio_venta: req.body.precio_venta, stock: req.body.stock, id:req.body.id},
             {
                 where: {
                     id: req.body.id
