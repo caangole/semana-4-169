@@ -82,7 +82,7 @@ exports.listar = async(req, res, next) =>{
 
 exports.update = async(req, res, next) =>{
     try{
-        const usuario= await models.Usuario.findOne({where : {email: req.body.email}});
+        const usuario= await models.Usuario.findOne({where : {email: req.body.email, id: req.body.id}});
         if(usuario){
             const usuario = await models.Usuario.update({name: req.body.name},
             {

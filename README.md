@@ -1,7 +1,6 @@
-# Estructura Evaluacion semana 4
+# Versión 1.1.
 
-#  Comando
-```
-npm install
-```
+#  Modificaciones:
+
+Se habilitó la modificación del parámetro id a través de las funciones update() en los controladores.
 
